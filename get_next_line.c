@@ -6,7 +6,7 @@
 /*   By: kadachi <kadachi@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 20:44:12 by kadachi           #+#    #+#             */
-/*   Updated: 2024/12/01 12:25:33 by kadachi          ###   ########.fr       */
+/*   Updated: 2024/12/09 15:23:30 by kadachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ char	*get_next_line(int fd)
 	char	*line;
 
 	line = ft_strjoin("", "");
+	if (line == NULL)
+		return (NULL);
 	while (1)
 	{
 		c = ft_fgetc(fd);
