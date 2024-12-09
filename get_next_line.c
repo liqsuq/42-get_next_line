@@ -6,7 +6,7 @@
 /*   By: kadachi <kadachi@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 20:44:12 by kadachi           #+#    #+#             */
-/*   Updated: 2024/12/09 15:23:30 by kadachi          ###   ########.fr       */
+/*   Updated: 2024/12/09 15:30:16 by kadachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,12 +64,14 @@ char	*get_next_line(int fd)
 // int main(void)
 // {
 // 	char *line;
-// 	line = get_next_line(STDIN_FILENO);
+// 	int fd;
+// 	fd = open("test.txt", O_RDONLY);
+// 	line = get_next_line(fd);
 // 	while (line != NULL)
 // 	{
 // 		printf("%s", line);
 // 		free(line);
-// 		line = get_next_line(STDIN_FILENO);
+// 		line = get_next_line(fd);
 // 	}
 // 	return (0);
 // }
